@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# Fabric run directory
+run/
+
+# Loom caches
+loom-cache/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+*.log.gz
+
+# Misc
+*.dat
