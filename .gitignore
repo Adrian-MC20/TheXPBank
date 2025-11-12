@@ -19,3 +19,6 @@ loom-cache/
 
 # Misc
 *.dat
+
+# Apple stuff
+.DS_Store
