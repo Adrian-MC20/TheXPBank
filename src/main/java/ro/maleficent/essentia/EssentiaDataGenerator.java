@@ -1,9 +1,9 @@
-package ro.maleficent.xpbank;
+package ro.maleficent.essentia;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class XPBankDataGenerator implements DataGeneratorEntrypoint {
+public class EssentiaDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 

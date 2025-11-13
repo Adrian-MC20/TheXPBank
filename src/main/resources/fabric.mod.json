@@ -1,32 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "xp-bank",
+	"id": "essentia",
 	"version": "${version}",
-	"name": "XP Bank",
-	"description": "Secure your valuable XP using the XP Bank items",
+	"name": "Essentia - The XP Bank",
+	"description": "Secure your valuable XP using the Essentia items",
 	"authors": [
 		"Maleficent20"
 	],
 	"contact": {
 		"homepage": "",
-		"sources": "https://github.com/Adrian-MC20/TheXPBank"
+		"sources": "https://github.com/Adrian-MC20/essentia-thexpbank"
 	},
 	"license": "MIT",
-	"icon": "assets/xp-bank/icon.png",
+	"icon": "assets/essentia/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"ro.maleficent.xpbank.XPBank"
+			"ro.maleficent.essentia.Essentia"
 		],
 		"fabric-datagen": [
-			"ro.maleficent.xpbank.XPBankDataGenerator"
+			"ro.maleficent.essentia.EssentiaDataGenerator"
 		],
         "client": [
-          "ro.maleficent.xpbank.XPBankClient"
+          "ro.maleficent.essentia.EssentiaClient"
         ]
 	},
 	"mixins": [
-		"xp-bank.mixins.json"
+      "essentia.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",

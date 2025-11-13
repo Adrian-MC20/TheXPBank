@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "ro.maleficent.xpbank.mixin",
+	"package": "ro.maleficent.essentia.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"
