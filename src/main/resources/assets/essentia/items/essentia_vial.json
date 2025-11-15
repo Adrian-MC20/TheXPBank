@@ -1,6 +1,30 @@
 {
   "model": {
-    "type": "model",
-    "model": "essentia:item/essentia_vial"
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:damage",
+    "normalize": true,
+    "entries": [
+      {
+        "threshold": 0.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "essentia:item/essentia_vial/empty"
+        }
+      },
+      {
+        "threshold": 0.01,
+        "model": {
+          "type": "minecraft:model",
+          "model": "essentia:item/essentia_vial/partial"
+        }
+      },
+      {
+        "threshold": 0.99,
+        "model": {
+          "type": "minecraft:model",
+          "model": "essentia:item/essentia_vial/full"
+        }
+      }
+    ]
   }
 }

@@ -32,8 +32,8 @@ public class EssentiaVialItem extends Item {
         int clamped = Math.max(0, Math.min(CAPACITY, amount));
         stack.set(ModDataComponents.STORED_XP, clamped);
 
-        // Map stored XP (0..CAPACITY) -> damage (CAPACITY..0)
-        int damage = CAPACITY - clamped;
+        // Damage grows with fill level
+        int damage = clamped;
         stack.setDamage(damage);
     }
 
