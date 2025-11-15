@@ -71,7 +71,3 @@ When a player uses a stack:
 - The rest of the stack remains in the player’s hand
 
 This keeps inventory management clean without breaking XP storage logic.
-
----
-
-More items and features will be added in future updates as Essentia develops into a complete XP management system.
