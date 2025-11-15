@@ -1,6 +1,8 @@
 package ro.maleficent.essentia;
 
 import net.fabricmc.api.ModInitializer;
+import ro.maleficent.essentia.registry.ModDataComponents;
+import ro.maleficent.essentia.registry.ModItems;
 
 
 public class Essentia implements ModInitializer {
@@ -8,6 +10,7 @@ public class Essentia implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModDataComponents.register();
         ModItems.register();
 	}
 }
