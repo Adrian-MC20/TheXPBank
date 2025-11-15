@@ -1,29 +1,68 @@
-# The XP Bank
+# Essentia
 
-A Fabric mod for Minecraft **1.21.10** that introduces a system for storing, saving, and retrieving player XP using custom items and blocks.  
-Currently in active development.
+Essentia is a lightweight Fabric mod for Minecraft 1.21.10 that introduces a clean and intuitive system for storing and managing player XP.
 
-## Features (Planned)
+The mod focuses on simplicity, clarity, and expandability. Version 1 adds the Essentia Vial, with future updates bringing the Essentia Bank block and a full XP management interface.
 
-- XP storage item
-- XP deposit and withdrawal mechanics
-- Custom block with GUI
-- Persistent NBT-based XP storage
-- UI indicators / tooltips
-- Compatible with Fabric API and Mod Menu (dev-only)
+---
 
-## Development
+## What the Mod Does
 
-This project uses:
+Essentia allows players to:
+- Store their XP safely in containers
+- Carry XP between bases or worlds
+- Save XP before dangerous encounters
+- Share XP with teammates
+- Use XP more strategically and efficiently
 
-- Java (IntelliJ IDEA)
-- Fabric Loader
-- Fabric API
-- Fabric Loom (Gradle plugin)
-- Yarn mappings
-- Mod Menu (dev-only)
+The goal is to replace the limitations of vanilla XP with a consistent, elegant, player-friendly XP ecosystem.
 
-### Run the mod in development
+---
 
-```bash
-./gradlew runClient
+## Current Features
+
+### **Essentia Vial**
+A custom item that stores XP in precise units (XP points, not levels).
+
+**Core behavior:**
+- **Capacity:** 350 XP
+- **Deposit:** Shift + Right-Click
+- **Withdraw:** Right-Click (returns all stored XP)
+- **Partial Fill:** Supported
+- **Tooltip:** Shows exact XP stored
+- **Dynamic Visual States:**
+    - Empty
+    - Partially filled
+    - Full
+
+The vial uses Minecraft’s modern data components and damage-based model dispatching to automatically update its appearance based on the fill level.
+
+---
+
+## Planned Features
+
+### **Essentia Bank (Block)**
+A stationary XP storage block with large capacity.
+- Acts as a central XP reservoir
+- Supports depositing/withdrawing XP
+- Integrates naturally with Essentia Vials
+- Ideal for mid/late-game storage setups
+
+### **Custom GUI for the Essentia Bank**
+A simple interface that will show:
+- Current XP stored
+- Transfer controls
+- Vial slots
+- Capacity indicators
+
+### **User Experience Improvements**
+- More refined tooltip indicators
+- Optional HUD element for vial status
+
+### **Audio & Animation**
+- Subtle sound effects for filling/withdrawing
+- Simple animation to give the vial a “potion-like” feel when used
+
+---
+
+More items and features will be added in future updates as Essentia develops into a complete XP management system.
