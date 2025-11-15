@@ -49,7 +49,7 @@ A stationary XP storage block with large capacity.
 - Ideal for mid/late-game storage setups
 
 ### **Custom GUI for the Essentia Bank**
-A simple interface that will show:
+A clean interface that will show:
 - Current XP stored
 - Transfer controls
 - Vial slots
@@ -60,8 +60,17 @@ A simple interface that will show:
 - Optional HUD element for vial status
 
 ### **Audio & Animation**
-- Subtle sound effects for filling/withdrawing
-- Simple animation to give the vial a “potion-like” feel when used
+- Sound effects when filling or withdrawing XP
+- Light animation to make using the vial feel similar to drinking or channeling a potion
+
+### **Stackable Empty Vials**
+Empty Essentia Vials will be stackable (like vanilla glass bottles).  
+When a player uses a stack:
+- Only **one vial** separates from the stack
+- That vial becomes the filled one
+- The rest of the stack remains in the player’s hand
+
+This keeps inventory management clean without breaking XP storage logic.
 
 ---
 
