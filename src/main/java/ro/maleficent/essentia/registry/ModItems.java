@@ -9,8 +9,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.item.Items;
 import ro.maleficent.essentia.item.EssentiaVialItem;
 
+import static ro.maleficent.essentia.Essentia.MOD_ID;
+
 public class ModItems {
-    public static final RegistryKey<Item> ESSENTIAL_VIAL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of("essentia","essentia_vial"));
+    public static final RegistryKey<Item> ESSENTIAL_VIAL_KEY = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID,"essentia_vial"));
 
     public static final Item ESSENTIA_VIAL = Items.register(ESSENTIAL_VIAL_KEY, EssentiaVialItem::new, new Item.Settings().maxCount(1));
 

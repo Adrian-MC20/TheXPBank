@@ -6,13 +6,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.dynamic.Codecs;
 
+import static ro.maleficent.essentia.Essentia.MOD_ID;
+
 public class ModDataComponents {
 
     // Stored XP for Essential Vial (per stack)
     public static final ComponentType<Integer> STORED_XP =
             Registry.register(
                     Registries.DATA_COMPONENT_TYPE,
-                    Identifier.of("essentia", "stored_xp"),
+                    Identifier.of(MOD_ID, "stored_xp"),
                     ComponentType.<Integer>builder()
                             .codec(Codecs.NON_NEGATIVE_INT)
                             .build());
