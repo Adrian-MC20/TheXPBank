@@ -27,9 +27,9 @@ public class EssentiaVialItem extends Item {
         return Math.max(0, Math.min(CAPACITY, value));
     }
 
-    // Helper: set stored XP and update visual damange
-    public static void setStoredXp(ItemStack stack, int ammount){
-        int clamped = Math.max(0, Math.min(CAPACITY, ammount));
+    // Helper: set stored XP and update visual damage
+    public static void setStoredXp(ItemStack stack, int amount){
+        int clamped = Math.max(0, Math.min(CAPACITY, amount));
         stack.set(ModDataComponents.STORED_XP, clamped);
 
         // Map stored XP (0..CAPACITY) -> damage (CAPACITY..0)
@@ -47,14 +47,14 @@ public class EssentiaVialItem extends Item {
         return player.totalExperience;
     }
 
-    private static void addXpToPlayer(PlayerEntity player, int ammount){
-        if (ammount <= 0) return;
-        player.addExperience(ammount);
+    private static void addXpToPlayer(PlayerEntity player, int amount){
+        if (amount <= 0) return;
+        player.addExperience(amount);
     }
 
-    public static void removeXpFromPlayer(PlayerEntity player, int ammount){
-        if (ammount <= 0) return;
-        player.addExperience(-ammount);
+    public static void removeXpFromPlayer(PlayerEntity player, int amount){
+        if (amount <= 0) return;
+        player.addExperience(-amount);
     }
 
     @Override
@@ -99,6 +99,7 @@ public class EssentiaVialItem extends Item {
         return false;
     }
 
+    @SuppressWarnings("deprecated")
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, TooltipDisplayComponent displayComponent, Consumer<Text> textConsumer, TooltipType type) {
         super.appendTooltip(stack, context, displayComponent, textConsumer, type);
